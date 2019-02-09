@@ -12,7 +12,8 @@ class CustomerController {
         val initalCustomers = arrayOf(
                 Customer(1, "Kotlin"),
                 Customer(2, "Spring"),
-                Customer(3, "Microservices")
+                Customer(3, "Microservices"),
+                Customer(4, "OpenShift")
         )
         val customers = ConcurrentHashMap<Int, Customer> (initalCustomers.associateBy(Customer::id))
     }
